@@ -19,74 +19,71 @@ function TabBottomRoutes() {
         <TabBottom.Navigator
             initialRouteName="Home"
             screenOptions={{
-                tabBarActiveTintColor: "#DAA520",
-                tabBarInactive: "#DAA520"
+                tabBarActiveTintColor: "#CD853F",
+                tabBarInactive: "#CD853F"
             }}>
             <TabBottom.Screen
-                name="Home"
+                name="Sobre nós"
                 component={Home}
                 options={{
-                    tabBarShowLabel: false,
                     headerShown: false,
                     tabBarIcon: ({ focused, size, color }) => {
                         if (focused) {
                             return (
                                 <Ionicons
                                     size={size}
-                                    color={"#DAA520"}
+                                    color={"#CD853F"}
                                     name='home' />
                             );
                         }
                         return (
                             <Ionicons
                                 size={size}
-                                color={"#DAA520"}
+                                color={"#CD853F"}
                                 name='home-outline' />
                         );
                     }
                 }} />
             <TabBottom.Screen
-                name="Feed"
+                name="Publicações"
                 component={Feed}
                 options={{
-                    tabBarShowLabel: false,
                     headerShown: false,
                     tabBarIcon: ({ focused, size, color }) => {
                         if (focused) {
                             return (
                                 <Ionicons
                                     size={size}
-                                    color={"#DAA520"}
+                                    color={"#CD853F"}
                                     name='browsers' />
                             );
                         }
                         return (
                             <Ionicons
                                 size={size}
-                                color={"#DAA520"}
+                                color={"#CD853F"}
                                 name='browsers-outline' />
                         );
                     }
                 }} />
             <TabBottom.Screen
-                name="About"
+                name="Lembretes"
                 component={About}
                 options={{
-                    tabBarShowLabel: false,
                     headerShown: false,
                     tabBarIcon: ({ focused, size, color }) => {
                         if (focused) {
                             return (
                                 <Ionicons
                                     size={size}
-                                    color={"#DAA520"}
+                                    color={"#CD853F"}
                                     name='information-circle' />
                             );
                         }
                         return (
                             <Ionicons
                                 size={size}
-                                color={"#DAA520"}
+                                color={"#CD853F"}
                                 name='information-circle-outline' />
                         );
                     }
@@ -104,9 +101,9 @@ export default function DrawerRoutes() {
                 name='Inicio'
                 component={TabBottomRoutes}
                 options={{
-                    drawerLabel: 'Inicio',
+                    drawerLabel: 'Início',
                     drawerIcon: ({ size, color }) => {
-                        return <Ionicons size={size} color={"#DAA520"} name="home"/>
+                        return <Ionicons size={size} color={"#A0522D"} name="home"/>
                     }
                 }}
             />
@@ -117,7 +114,7 @@ export default function DrawerRoutes() {
                 options={{
                     drawerLabel: 'Blog',
                     drawerIcon: ({ size, color }) => {
-                        return <Ionicons size={size} color={"#DAA520"} name="browsers"/>
+                        return <Ionicons size={size} color={"#A0522D"} name="browsers"/>
                     }
                 }}
             />
